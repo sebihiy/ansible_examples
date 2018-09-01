@@ -1,4 +1,6 @@
+---
+- hosts: all
 - name: install the latest version of bc
   yum:
     name: bc
-    state: latest
+    state: present

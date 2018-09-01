@@ -1,6 +1,7 @@
 ---
 - hosts: all
-- name: install the latest version of bc
-  yum:
-    name: bc
-    state: present
+  tasks:
+  - name: Install bc
+    yum:
+      name: bc
+      state: present
